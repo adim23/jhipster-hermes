@@ -1,0 +1,99 @@
+{
+  "name": "Addresses",
+  "fields": [
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addressNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zipCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prosfLetter",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nameLetter",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "letterClose",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "firstLabel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondLabel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "thirdLabel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fourthLabel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fifthLabel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "favourite",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "countries",
+      "otherEntityRelationshipName": "addresses",
+      "relationshipName": "country",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "contactTypes",
+      "otherEntityRelationshipName": "addresses",
+      "relationshipName": "kind",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "regions",
+      "otherEntityRelationshipName": "addresses",
+      "relationshipName": "region",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "companies",
+      "otherEntityRelationshipName": "addresses",
+      "relationshipName": "company",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "citizens",
+      "otherEntityRelationshipName": "addresses",
+      "relationshipName": "citizen"
+    }
+  ],
+  "entityTableName": "addresses",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211229115634"
+}

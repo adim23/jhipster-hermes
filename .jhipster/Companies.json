@@ -1,0 +1,41 @@
+{
+  "name": "Companies",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "companyKinds",
+      "otherEntityRelationshipName": "companies",
+      "relationshipName": "kind",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "phones",
+      "otherEntityRelationshipName": "company",
+      "relationshipName": "phones"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "addresses",
+      "otherEntityRelationshipName": "company",
+      "relationshipName": "addresses"
+    }
+  ],
+  "entityTableName": "companies",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211229115642"
+}

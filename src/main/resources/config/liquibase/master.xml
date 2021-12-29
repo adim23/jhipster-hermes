@@ -15,7 +15,40 @@
     <property name="datetimeType" value="datetime" dbms="oracle, mssql, postgresql, h2"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115629_added_entity_Jobs.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115630_added_entity_Countries.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115631_added_entity_Regions.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115632_added_entity_Cities.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115633_added_entity_ZipCodes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115634_added_entity_Addresses.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115635_added_entity_Phones.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115636_added_entity_Emails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115637_added_entity_PhoneTypes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115638_added_entity_ContactTypes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115639_added_entity_SocialKinds.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115640_added_entity_SocialContacts.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115641_added_entity_CompanyKinds.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115642_added_entity_Companies.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115643_added_entity_Codes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115644_added_entity_Teams.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115645_added_entity_Origins.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115646_added_entity_CitizenFolders.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115647_added_entity_MaritalStatus.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115648_added_entity_Citizens.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115649_added_entity_CitizensRelations.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115650_added_entity_CitizensMeetings.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20211229115631_added_entity_constraints_Regions.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115632_added_entity_constraints_Cities.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115633_added_entity_constraints_ZipCodes.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115634_added_entity_constraints_Addresses.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115635_added_entity_constraints_Phones.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115636_added_entity_constraints_Emails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115640_added_entity_constraints_SocialContacts.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115642_added_entity_constraints_Companies.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115648_added_entity_constraints_Citizens.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115649_added_entity_constraints_CitizensRelations.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211229115650_added_entity_constraints_CitizensMeetings.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>
