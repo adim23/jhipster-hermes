@@ -1,0 +1,46 @@
+{
+  "name": "SocialContacts",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "favored",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "socialKinds",
+      "otherEntityRelationshipName": "socialContacts",
+      "relationshipName": "social",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "contactTypes",
+      "otherEntityRelationshipName": "socialContacts",
+      "relationshipName": "kind",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "citizens",
+      "otherEntityRelationshipName": "social",
+      "relationshipName": "citizen"
+    }
+  ],
+  "entityTableName": "social_contacts",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211229115640"
+}
